@@ -24,7 +24,6 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.REPOS_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm run semantic-release
 
   build-and-push:
